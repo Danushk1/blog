@@ -47,9 +47,20 @@ Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
 
 Route::get('/about', [App\Http\Controllers\template\AboutController::class, 'index'])->name('index');
 Route::get('/blog', [App\Http\Controllers\template\blogController::class, 'index'])->name('index');
+Route::get('/blogclassic', [App\Http\Controllers\template\blogController::class, 'blogclassic'])->name('blogclassic');
 Route::get('/blog-filter', [App\Http\Controllers\template\blogController::class, 'blogwithfilter'])->name('blogwithfilter');
 Route::get('/contact', [App\Http\Controllers\template\ContactController::class, 'index'])->name('index');
 Route::get('/saas', [App\Http\Controllers\template\ContactController::class, 'saas'])->name('saas');
 Route::get('/saas2', [App\Http\Controllers\template\ContactController::class, 'saas2'])->name('saas2');
 
+Route::get('/index-app', [App\Http\Controllers\template\ContactController::class, 'indexapp'])->name('index-app');
+Route::get('/agency', [App\Http\Controllers\template\ContactController::class, 'agency'])->name('agency');
+Route::get('/agency-two', [App\Http\Controllers\template\ContactController::class, 'agencytwo'])->name('agency-two');
+Route::get('/analytics', [App\Http\Controllers\template\ContactController::class, 'analytics'])->name('analytics');
+
+Route::get('/service', [App\Http\Controllers\template\AboutController::class, 'service'])->name('service');
+Route::get('/servicetwo', [App\Http\Controllers\template\AboutController::class, 'servicetwo'])->name('servicetwo');
+
+
+Route::get('/comment', [App\Http\Controllers\template\AboutController::class, 'store'])->name('store');
 

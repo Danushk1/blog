@@ -9,10 +9,14 @@ class blogController extends Controller
 {
     public function index()
     {
-        return view('frontend.layout.blog.blog');
+        return view('layouts.blog.blog');
     }
     public function blogwithfilter()
     {
-        return view('frontend.layout.blog.blog_with_filter');
+        return view('layouts.blog.blog_with_filter');
+    }
+    public function blogclassic()
+    {
+        return view('layouts.blog.classic');
     }
 }

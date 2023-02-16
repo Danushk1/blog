@@ -51,8 +51,12 @@
 </head>
 
 <body>
-    @include('frontend.layout.sections.header.header')
 
+
+
+    @include('layouts.sections.header.header')
+
+	
 
 
 <!--==========================-->
@@ -857,7 +861,7 @@
 
 
 
-@include('frontend.layout.sections.footer.footer')
+@include('layouts.sections.footer.footer')
 
 <!-- Scripts -->
 

@@ -56,10 +56,14 @@
 </head>
 
 <body>
-    @include('frontend.layout.sections.header.header')
 
 
 
+    @include('layouts.sections.header.header')
+
+
+
+    
 
 
     <section class="banner banner-saas-main">
@@ -890,7 +894,7 @@
 
 
 
-@include('frontend.layout.sections.footer.footer')
+@include('layouts.sections.footer.footer')
 
 <!-- Scripts -->
 

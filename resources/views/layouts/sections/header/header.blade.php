@@ -36,8 +36,6 @@
 
 </head>
 <body>
-
-
 <header class="site-header header-main header-transparent header-fixed" data-header-fixed="true" data-mobile-menu-resolution="1024">
 			<div class="container-full">
 				<div class="header-inner">
@@ -74,10 +72,10 @@
 										<li><a href="/">Home Main</a></li>
 										<li><a href="saas">Home Sass</a></li>
 										<li><a href="saas2">Home Sass Two</a></li>
-										<li><a href="index-app.html">Home App Landing</a></li>
-										<li><a href="index-agency.html">Home Agency</a></li>
-										<li><a href="index-agency-two.html">Home Agency Two</a></li>
-										<li><a href="index-analytics.html">Home Analytics</a></li>
+										<li><a href="index-app">Home App Landing</a></li>
+										<li><a href="agency">Home Agency</a></li>
+										<li><a href="agency-two">Home Agency Two</a></li>
+										<li><a href="analytics">Home Analytics</a></li>
 										<li><a href="index-social.html">Home Social</a></li>
 										<li><a href="index-seo.html">Home SEO</a></li>
 									</ul>
@@ -87,8 +85,8 @@
 									<a href="blog">Blog</a>
 									<ul class="sub-menu">
 										<li><a href="blog-filter">Blog With Filter</a></li>
-										<li><a href="blog.html">Blog Grid</a></li>
-										<li><a href="blog-classic.html">Blog Classic</a></li>
+										<li><a href="blog">Blog Grid</a></li>
+										<li><a href="blogclassic">Blog Classic</a></li>
 										<li><a href="blog-single.html">Blog Single</a></li>
 									</ul>
 								</li>
@@ -101,7 +99,7 @@
 											<a href="service">Service</a>
 											<ul class="sub-menu">
 												<li><a href="service">Service One</a></li>
-												<li><a href="service-two">Service Two</a></li>
+												<li><a href="servicetwo">Service Two</a></li>
 											</ul>
 										</li>
 										<li><a href="team">Our Team</a></li>

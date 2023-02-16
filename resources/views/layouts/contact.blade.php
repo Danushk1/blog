@@ -52,7 +52,10 @@
 </head>
 
 <body>
-    @include('frontend.layout.sections.header.header')
+
+
+
+    @include('layouts.sections.header.header')
 
 
 
@@ -91,6 +94,7 @@
 <!--================================-->
 <section class="contact-form-page">
 <div class="container">
+
     <div class="row">
         <div class="col-md-4">
             <div class="contact-information">
@@ -130,23 +134,17 @@
             <!-- /.contact-information -->
         </div>
         <!-- /.col-md-4 -->
-
+        @if (session('message'))
+        <h6 class="alert alert-warning mb-3">{{ session('message') }}</h6>
+        @endif
+       
+       
+      
         <div class="col-md-8">
             <div class="contact-form-wrapper">
-                <form action="php/mailer.php" class="contact-form-main" data-gp-form="contact-form">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" name="fname" placeholder="Name" class="gp-input">
-                        </div>
-                        <!-- /.col-md-6 -->
-
-                        <div class="col-md-6">
-                            <input type="email" name="email" placeholder="Email" class="gp-input">
-                        </div>
-                        <!-- /.col-md-6 -->
-
-                        <div class="col-md-12">
-                            <input type="text" name="subject" placeholder="Subject" class="gp-input">
+                <form action="{{ url('comment')}}" class="contact-form-main" data-gp-form="contact-form">
+                    <div class="row">@foreach($posts as $posts)
+                    <input type="hidden" name="post_slug" value="{{ $posts->slug}}">@endforeach
                             <textarea name="content" id="message" cols="30" rows="10" class="gp-input gp-textarea" placeholder="Your Comment"></textarea>
                             <button type="submit" class="gp-btn btn-submit">Send Message</button>
 
@@ -155,7 +153,7 @@
                             </div>
                             <!-- /.form-result-->
                         </div>
-                    </div>
+                    </div> 
                     <!-- /.row -->
                 </form>
                 <!-- /.contact-form-main -->
@@ -164,6 +162,7 @@
         </div>
         <!-- /.col-md-8 -->
     </div>
+   
     <!-- /.row -->
 
     <div class="row mt-140">
@@ -234,7 +233,7 @@
 
 
 
-@include('frontend.layout.sections.footer.footer')
+@include('layouts.sections.footer.footer')
 
 <!-- Scripts -->
 

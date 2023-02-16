@@ -51,7 +51,10 @@
 </head>
 
 <body>
-    @include('frontend.layout.sections.header.header')
+
+
+
+    @include('layouts.sections.header.header')
 
 
 
@@ -75,7 +78,7 @@
     <h1 class="page-title">Blog</h1>
 
     <ul class="breadcrumbs">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li>Blog</li>
     </ul>
 </div>
@@ -549,7 +552,7 @@
 
 
 
-@include('frontend.layout.sections.footer.footer')
+@include('layouts.sections.footer.footer')
 
 <!-- Scripts -->
 
